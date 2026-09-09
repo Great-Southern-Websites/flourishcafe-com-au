@@ -33,6 +33,7 @@
 
   --font-display: "Raleway", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-logo: "Great Vibes", "Brush Script MT", cursive;
   --container: 72rem;
   --radius: 14px;
 }
@@ -124,7 +125,9 @@ p { margin: 0 0 1rem; }
 .bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.25rem; position: relative; }
 .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--fg); font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; }
 .brand img { height: 3rem; width: auto; }
-.brand-name { font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; letter-spacing: 0.01em; }
+.brand-name { display: inline-flex; align-items: baseline; gap: 0.4rem; line-height: 1; }
+.brand-script { font-family: var(--font-logo); font-weight: 400; font-size: 2rem; letter-spacing: 0; }
+.brand-caps { font-family: var(--font-display); font-weight: 300; font-size: 0.95rem; letter-spacing: 0.14em; text-transform: uppercase; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .brand img { filter: invert(1); } }
 :root[data-theme="dark"] .brand img { filter: invert(1); }
 .nav-toggle-input { position: absolute; opacity: 0; width: 0; height: 0; }
