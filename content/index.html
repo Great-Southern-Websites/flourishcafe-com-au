@@ -1,15 +1,119 @@
 ---
-title: "Home"
-description: "BUILDER: one-sentence description of the business for search engines."
-image: logo.png
+title: "Flourish Cafe"
+description: "Flourish Cafe on Norman Avenue in Frankston South serves Genovese coffee, breakfast and lunch every day, with themed dinner nights on Thursdays."
+image: coffee.jpg
 layout: default
 ---
-<!-- BUILDER: hero, then the sections that mirror the original home page. -->
 <section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <img class="hero-logo" src="{=site.url('images/logo.png')}" alt="Flourish licensed cafe, since 2008" width="200" height="200">
+      <p class="eyebrow">Coffee, breakfast, lunch</p>
+      <h1>Welcome to Flourish Cafe</h1>
+      <p class="lead">Serving great coffee and delicious food on Norman Avenue in Frankston South. Dine in or take away, seven days a week.</p>
+      <p class="hero-actions">
+        <a class="btn btn-accent" href="{=site.url('food')}">See our food</a>
+        <a class="btn btn-ghost" href="{=site.url('events')}">What's on</a>
+      </p>
+    </div>
+    <img src="{=site.url('images/coffee.jpg')}" alt="Genovese flat white coffee in a cup" width="1024" height="1024" fetchpriority="high">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <h2>About</h2>
+      <p class="lead">Flourish Cafe. Since 2008.</p>
+      <p>Proud to serve you. Serving great coffee and delicious food, Flourish has a friendly, family atmosphere. Pop in and say hi.</p>
+      <p>Flourish is a licensed cafe, so you can have a glass of wine or a beer with your meal. We are open every day for breakfast and lunch, and on Thursday nights for dinner.</p>
+      <p class="section-actions"><a class="btn btn-primary" href="{=site.url('contact')}">Find us</a></p>
+    </div>
+    <img src="{=site.url('images/raspberry-muffins.jpg')}" alt="Tray of muffins topped with cream cheese icing and fresh raspberries" width="1024" height="1024" loading="lazy">
+  </div>
+</section>
+
+<figure class="banner-photo">
+  <img src="{=site.url('images/blackboard.jpg')}" alt="Jokes and life sayings written in chalk on the cafe blackboard" width="1110" height="271" loading="lazy">
+  <figcaption>The cafe blackboard.</figcaption>
+</figure>
+
+<section class="section section-alt">
   <div class="container">
-    <p class="eyebrow">Welcome</p>
-    <h1>Flourish Cafe</h1>
-    <p class="lead">Replace this with the business's own words.</p>
-    <p class="hero-actions"><a class="btn btn-primary" href="{=site.url('contact')}">Contact us</a></p>
+    <div class="section-head">
+      <h2>Our food and coffee</h2>
+      <p class="lead">Fresh delicious fare. Genovese coffee, the perfect choice.</p>
+    </div>
+    <div class="menu-grid">
+      <article class="menu-card">
+        <img src="{=site.url('images/big-breakfast.jpg')}" alt="Bacon, poached eggs on sourdough, tomato, spinach, breakfast sausages and relish on a cafe plate" width="600" height="800" loading="lazy">
+        <div class="menu-body"><h3>Big Breakfast</h3><p>Top seller.</p></div>
+      </article>
+      <article class="menu-card">
+        <img src="{=site.url('images/breakfast-eggs.jpg')}" alt="Bacon, eggs, tomato, hash browns and relish on a blue cafe plate" width="800" height="789" loading="lazy">
+        <div class="menu-body"><h3>Breakfast eggs</h3><p>Eggs your way on toast. Add your extras.</p></div>
+      </article>
+      <article class="menu-card">
+        <img src="{=site.url('images/pancakes.jpg')}" alt="Pancakes topped with ice cream and berries and dusted with icing sugar" width="800" height="793" loading="lazy">
+        <div class="menu-body"><h3>Buttermilk pancakes</h3><p>Banana or berries.</p></div>
+      </article>
+      <article class="menu-card">
+        <img src="{=site.url('images/blt.jpg')}" alt="Bacon, lettuce and tomato on an open Turkish bread roll" width="799" height="800" loading="lazy">
+        <div class="menu-body"><h3>BLT</h3><p>All time fave.</p></div>
+      </article>
+    </div>
+    <p class="section-actions"><a class="btn btn-primary" href="{=site.url('food')}">See the full food list</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div>
+      <h2>Drinks</h2>
+      <p class="lead">What's in stock.</p>
+      <table class="price-table">
+        <tr><td>Sparkling wine</td><td>from $12 per glass</td></tr>
+        <tr><td>White wine</td><td>from $12 per glass</td></tr>
+        <tr><td>Red wine</td><td>from $12 per glass</td></tr>
+        <tr><td>Beer</td><td>from $7</td></tr>
+        <tr><td>Spirits</td><td>from $12</td></tr>
+        <tr><td>Cocktails</td><td>from $20</td></tr>
+      </table>
+      <p><a href="{=site.url('drinks')}">See the drinks list</a></p>
+    </div>
+    <div>
+      <h2>Upcoming events</h2>
+      <article class="event-card has-image">
+        <img src="{=site.url('images/pasta-night.jpg')}" alt="Bowl of pasta for Thursday pasta night" width="750" height="499" loading="lazy">
+        <div class="event-body">
+          <p class="event-when">Thursday nights, 5:00pm to 9:00pm</p>
+          <h3>Our famous pasta night</h3>
+          <p>Kids under 10 eat free.</p>
+        </div>
+      </article>
+      <p style="margin-top:1rem">Indian, Greek and Afghan themed dinners are on the way. <a href="{=site.url('events')}">See all events</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt section-tight">
+  <div class="container grid-2">
+    <div>
+      <h2>Opening hours</h2>
+      <p class="lead">Dine in or take away.</p>
+      <table class="hours">
+        <tr><th scope="row">Monday to Sunday</th><td>8:00am to 3:00pm</td></tr>
+        <tr><th scope="row">Thursday night dinner</th><td>5:00pm to 9:00pm</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=44+Norman+Avenue+Frankston+South+VIC+3199">44 Norman Avenue, Frankston South, Victoria 3199</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg><a href="tel:+61397878489">(03) 9787 8489</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:maree@mareestours.com">maree@mareestours.com</a></li>
+      </ul>
+      <p class="section-actions"><a class="btn btn-primary" href="{=site.url('contact')}">Send us a message</a></p>
+    </div>
   </div>
 </section>

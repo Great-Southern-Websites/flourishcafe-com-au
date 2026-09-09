@@ -1,35 +1,33 @@
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
-<!-- Structured data for search engines (schema.org). BUILDER: fill every field
-     from the business's own details; delete keys you have no real value for.
-     Keep it accurate when contact details, hours or locations change. -->
 <script type="application/ld+json">
 {|{
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "CafeOrCoffeeShop",
   "@id": "|}{=site.url.absolute}{|#business",
   "name": "Flourish Cafe",
   "url": "|}{=site.url.absolute}{|",
   "logo": "|}{=site.url('images/logo.png').absolute}{|",
-  "image": "|}{=site.url('images/logo.png').absolute}{|",
-  "description": "BUILDER: one sentence, the same as the home page description.",
-  "telephone": "+61 3 0000 0000",
-  "email": "hello@example.com",
+  "image": "|}{=site.url('images/coffee.jpg').absolute}{|",
+  "description": "Flourish Cafe on Norman Avenue in Frankston South serves Genovese coffee, breakfast and lunch every day, with themed dinner nights on Thursdays.",
+  "telephone": "+61 3 9787 8489",
+  "email": "maree@mareestours.com",
+  "foundingDate": "2008",
+  "servesCuisine": "Cafe",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1 Example Street",
-    "addressLocality": "Suburb",
+    "streetAddress": "44 Norman Avenue",
+    "addressLocality": "Frankston South",
     "addressRegion": "VIC",
-    "postalCode": "3000",
+    "postalCode": "3199",
     "addressCountry": "AU"
   },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "08:00", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday"], "opens": "17:00", "closes": "21:00" }
   ],
-  "sameAs": [],
-  "potentialAction": {
-    "@type": "ReserveAction",
-    "name": "Book",
-    "target": "|}{=site.url('contact').absolute}{|"
-  }
+  "sameAs": [
+    "https://www.facebook.com/Flourish-Cafe-1382868968648483/",
+    "https://www.instagram.com/flourish_cafe/"
+  ]
 }|}
 </script>
